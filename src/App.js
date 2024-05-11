@@ -8,13 +8,13 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <>
+    <div className='App'>
      <Header/>
      <Nav/>
      <Main/>
      <Footer/>
 
-    </>
+    </div>
   );
 }
 

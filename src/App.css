@@ -1,7 +1,14 @@
 .App {
   text-align: center;
+  display: grid;
+  grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
+  grid-template-rows: auto 1fr auto auto;
+  height: 100vh;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;

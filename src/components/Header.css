@@ -1,0 +1,8 @@
+.header{
+  grid-area: header;
+  display: flex;
+}
+img{
+    margin: 15px;
+  width:215px;
+}

@@ -1,5 +1,6 @@
 import Nav from "./Nav";
 import logo from "../assets/icons/Logo.png";
+import './Header.css';
 
 import React from "react";
 
@@ -11,9 +12,9 @@ function Header() {
           <img src={logo} alt="Logo" />
         </div>
 
-        <div className="navigation">
+
           <Nav />
-        </div>
+
       </div>
     </>
   );
