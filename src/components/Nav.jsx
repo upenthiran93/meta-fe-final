@@ -1,17 +1,22 @@
 import React from 'react';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import './Nav.css';
+
 function Nav() {
     return (
-      <nav className='nav' >
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#home">About</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#home">Reservation</a></li>
-          <li><a href="#contact">Order online</a></li>
-          <li><a href="#contact">Login</a></li>
-        </ul>
-      </nav>
+      <Router>
+        <nav className='nav'>
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/menu">Menu</Link></li>
+            <li><Link to="/reservation">Reservation</Link></li>
+            <li><Link to="/order">Order online</Link></li>
+            <li><Link to="/login">Login</Link></li>
+          </ul>
+        </nav>
+      </Router>
     );
 }
+
 export default Nav;
