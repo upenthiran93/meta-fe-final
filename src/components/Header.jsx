@@ -12,7 +12,6 @@ function Header() {
           <img src={logo} alt="Logo" />
         </div>
 
-
           <Nav />
 
       </div>
