@@ -2,10 +2,10 @@ main {
     background-color: #f5f5f5;
     display: grid;
     grid-template-areas: "Hero" "Highlight" "Testimonial" "About";
-    grid-template-rows: 35vh 60vh 35vh 25vh;
+    grid-template-rows: 35vh 60vh 35vh 35vh;
 
 }
-
+/*hero Section */
 .hero {
     grid-area: Hero;
     display: flex;
@@ -41,7 +41,7 @@ main {
 
 }
 
-
+/*Highlights Section */
 
 .Highlights {
     grid-area: Highlight;
@@ -67,6 +67,10 @@ main {
 
     align-self: center;
 }
+
+
+/*testimonial Section */
+
 .testimonial{
     grid-area: Testimonial;
     background-color: #495E57;
@@ -85,4 +89,22 @@ main {
     align-items: center;
     background-color: #495E57;
     color: #fff;
+}
+
+/*About Section */
+.About {
+    color: #000000;
+    margin: 5rem 10rem 10rem 10rem;
+    grid-area: About;
+
+    display: flex; /* Change from 'inline' to 'flex' */
+    justify-content: space-between; /* Add this line */
+    align-items: center;
+
+}
+.About_info{
+    width: 30%;
+}
+.About_img{
+    width: 30%;
 }
