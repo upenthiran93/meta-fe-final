@@ -10,21 +10,21 @@ import {
 } from "react-router-dom";
 
 function App() {
-  return (
+    return (
 
-    <div className='App'>
+        <div className='App'>
 
-        <Header />
-        <Router>
-        <Routes>
-            <Route path="/" element={<Main />} />
+            <Header/>
+            <Router>
+                <Routes>
+                    <Route path="/" element={<Main/>}/>
 
-        </Routes>
-        </Router>
-        <Footer />
+                </Routes>
+            </Router>
+            <Footer/>
 
-    </div>
-  );
+        </div>
+    );
 }
 
 export default App;
