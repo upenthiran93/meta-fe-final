@@ -1,6 +1,6 @@
 import Nav from "./Nav";
 import logo from "../assets/icons/Logo.png";
-import './Header.css';
+import './style/Header.css';
 
 import React from "react";
 
