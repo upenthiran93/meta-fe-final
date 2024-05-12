@@ -3,3 +3,41 @@ background-color: #f5f5f5;
     display: grid;
     grid-template-areas: "Hero" "Highlight""Testimonial""About";
 }
+
+.hero{
+    grid-area: Hero;
+    background-color: #495E57;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 2rem;
+}
+
+.hero>.info{
+   grid-column: 2 / 6;
+    align-self: center;
+    color: #fff;
+    /* Adjust as needed */
+
+}
+
+.hero>.mainn-img{
+    width: 100px;
+   grid-column: 11 / 11;
+
+
+    /* Adjust as needed */
+}
+.hero>.mainn-img img{
+    position: absolute;
+    top: 200px;
+    right: 10%;
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
+.Hero-Action{
+
+
+
+
+}

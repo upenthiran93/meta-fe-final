@@ -1,9 +1,10 @@
 import React from 'react';
 import './style/Main.css';
+import Hero from "./Hero";
 function Main() {
     return (
         <main className={"Main"}>
-            <h1>Main</h1>
+           <Hero/>
         </main>
     );
 }
