@@ -2,7 +2,7 @@ main {
     background-color: #f5f5f5;
     display: grid;
     grid-template-areas: "Hero" "Highlight" "Testimonial" "About";
-    grid-template-rows: 35vh 55vh 25vh 25vh;
+    grid-template-rows: 35vh 60vh 35vh 25vh;
 
 }
 
@@ -45,7 +45,7 @@ main {
 
 .Highlights {
     grid-area: Highlight;
-    margin: 5rem 10rem 2rem 10rem;
+    margin: 5rem 10rem 10rem 10rem;
 
 }
 
@@ -66,4 +66,23 @@ main {
     height: 100%;
 
     align-self: center;
+}
+.testimonial{
+    grid-area: Testimonial;
+    background-color: #495E57;
+}
+
+.testimonial_Title> h1 {
+    text-align: center;
+    color: #fff;
+}
+
+.testimonial_cards {
+    margin: 5rem 10rem 10rem 10rem;
+    grid-area: Testimonial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #495E57;
+    color: #fff;
 }
