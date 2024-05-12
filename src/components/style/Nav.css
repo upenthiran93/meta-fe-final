@@ -1,7 +1,6 @@
 .nav {
-
     overflow: hidden;
-    display: flex;
+
   }
   
 
@@ -11,6 +10,7 @@
   }
   
   .nav a {
+    font-size: 2rem;
     float: left;
     color: #000000;
     text-align: center;

@@ -1,64 +1,68 @@
-main{
-background-color: #f5f5f5;
+main {
+    background-color: #f5f5f5;
     display: grid;
-    grid-template-areas: "Hero" "Highlight""Testimonial""About";
+    grid-template-areas: "Hero" "Highlight" "Testimonial" "About";
     grid-template-rows: 35vh 55vh 25vh 25vh;
+    margin-right: 10rem;
+    margin-left: 10rem;
 }
 
-.hero{
-
+.hero {
     grid-area: Hero;
+    display: flex;
+    justify-content: space-between; /* Add this line */
     background-color: #495E57;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
     padding: 2rem;
-
 }
 
-.hero>.info{
-   grid-column: 2 / 6;
+.hero-info {
+    width: 50%; /* Corrected the typo from 'witdh' to 'width' */
+    margin-left: 5%;
+    flex: 1;
+    width: 35%; /* Corrected the typo from 'witdh' to 'width' */
     align-self: center;
     color: #fff;
-    /* Adjust as needed */
-
 }
 
-.hero>.mainn-img{
-    width: 100px;
-   grid-column: 11 / 11;
-
-
-    /* Adjust as needed */
+.hero-img {
+    position: relative;
+    width: 50%; /* Corrected the typo from 'witdh' to 'width' */
+    margin-right: 10rem; /* Corrected the capitalization from 'Right' to 'right' */
+    flex: 1;
 }
-.hero>.mainn-img img{
-
+.hero-img img {
     position: absolute;
-    top: 150px;
-    width: 250px;
+    right: 0;
+    width: 400px;
     height: auto;
-    border-radius: 5%;
-    z-index: 3; /* Adjust as needed to ensure the image is above all other elements */
-}
-.Hero-Action{
+    object-fit: cover;
 
 }
-.Highlights{
+
+
+
+.Highlights {
     grid-area: Highlight;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(10, 1fr);
 }
-.Highlights>.TitleBox{
+
+.TitleBox > h1 {
+    color: black;
+}
+
+.Highlights > .TitleBox {
     display: flex;
     justify-content: space-between;
     grid-column: 2 / 12;
-    grid-row: 2/ 2;
+    grid-row: 2 / 2;
     align-self: center;
-    color: #cd0b0b;
 }
-.HighlightsBox{
+
+.HighlightsBox {
+    justify-content: center;
     display: flex;
-    background-color: #cd0b0b;
     height: 100%;
     grid-column: 2 / 12;
     grid-row: 3 / 10;

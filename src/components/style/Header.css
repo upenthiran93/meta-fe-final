@@ -1,19 +1,24 @@
 .header{
   grid-area: nav;
   display: flex;
-  justify-content: space-between;
+  position: relative;
+
   align-items: center;
-  width: 80%;
-  margin: auto;
+
+
+  margin-left: 10rem;
+  margin-right: 10rem;
+
 }
 
-img{
+.header>img{
   margin: 15px;
   width:215px;
 }
 
 .nav{
-  display: flex;
+  position: absolute;
+right: 0;
 }
 
 .nav ul {

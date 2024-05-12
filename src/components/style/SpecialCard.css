@@ -1,0 +1,30 @@
+.special-card {
+
+
+    background-color: #EDEFEE;
+    border-radius: 5%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-areas:
+        "image"
+        "content";
+    grid-template-rows: 40% 60% ;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    padding: 0rem;
+    width: 400px;
+}
+.special-card>img {
+    padding: 0;
+    margin: 0;
+    grid-area: image;
+    width: 100%;
+    height: 100%;
+    border-radius: 5%  5% 0 0;
+    object-fit: cover;
+}
+
+.special-card>.content {
+    grid-area: content;
+    padding: 1rem;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import './style/Highlights.css';
 import SpecialCard from "./SpecialCard";
+import image from "../assets/images/restaurant.jpg";
 function Highlights () {
   return (
     <div className={"Highlights"}>
@@ -12,9 +13,9 @@ function Highlights () {
            {[...Array(3)].map((_, index) => (
               <SpecialCard
                   key={index}
-                  description={"test disscriptiopn"}
-                    title={"test title"}
-                    image={"https://via.placeholder.com/150"}
+                  description={" and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy."}
+                    title={"Name of the dish"}
+                    image={image}
               />
 
            ))}
