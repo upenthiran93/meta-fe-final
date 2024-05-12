@@ -14,7 +14,7 @@ function SpecialCard({title, description, image, Price}) {
                 <p>{description}</p>
                 <div className={"order-section"}>
                 <h2> oder this item</h2>
-                <button> oder noww</button>
+                <button> +</button>
                     </div>
             </div>
         </div>

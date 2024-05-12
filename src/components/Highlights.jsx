@@ -13,7 +13,7 @@ function Highlights () {
            {[...Array(3)].map((_, index) => (
               <SpecialCard
                   key={index}
-                  description={" and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy."}
+                  description={" and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'"}
                     title={"Name of the dish"}
                     image={image}
                   Price={"$ 20"}
