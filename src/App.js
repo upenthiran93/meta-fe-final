@@ -8,6 +8,7 @@ import {
     Routes,
     Route,
 } from "react-router-dom";
+import Reservation from "./components/Reservation";
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                 <Header/>
                 <Routes>
                     <Route path="/" element={<Main/>}/>
+                    <Route path="/reservation" element={<Reservation />} />
 
                 </Routes>
 

@@ -1,70 +1,38 @@
-
+import React, {useState} from 'react';
+import './style/Reservation.css';
 
 const Reservation = () => {
+    const [date, setDate] = useState('');
+    const [time, setTime] = useState('');
+    const [guests, setGuests] = useState(1);
+    const [occasion, setOccasion] = useState('');
+    const availableTimes = useState(['17:00', '18:00', '19:00', '20:00', '21:00', '22:00']);
     return (
         <section className="reservation">
             <div className="container">
                 <section className="reservation-wrap">
                     <div className="form-wrap">
                         <h2>Reservations</h2>
-                        <form action="/confirmed">
-                            <section className="booking-details">
-                                <h3>Personal Details</h3>
-                                <input
-                                    type="text"
-                                    name="Occassion"
-                                    id="occassion"
-                                    placeholder="Occassion"
-                                    required
-                                    maxLength="10"
-                                />
-                                <input type="date" name="date" id="date" required />
-                                <input
-                                    type="number"
-                                    name="number"
-                                    id="number"
-                                    min="2"
-                                    max="20"
-                                    placeholder="No of Guests"
-                                    required
-                                />
-                                <input type="time" name="time" id="time" required />
-                            </section>
-                            <section className="booking-details">
-                                <h3>Booking Details</h3>
-                                <input
-                                    type="text"
-                                    name="fullname"
-                                    id="fullname"
-                                    maxLength="30"
-                                    required
-                                    placeholder="Full Name"
-                                />
-                                <input
-                                    type="email"
-                                    name="email"
-                                    id="email"
-                                    required
-                                    placeholder="E-mail Id"
-                                    maxLength="30"
-                                />
-                                <input
-                                    type="text"
-                                    name="mobile"
-                                    id="mobile"
-                                    minLength="5"
-                                    maxLength="10"
-                                    placeholder="(+91) Mobile Number"
-                                    required
-                                />{" "}
-                                <input
-                                    type="text"
-                                    name="request"
-                                    id="request"
-                                    placeholder="Special Request ?"
-                                />
-                            </section>
-                            <button type="submit">Confirm Reservation</button>
+                        <form style={{display: "grid", maxWidth: "200px", gap: "20px"}}>
+                            <label htmlFor="res-date">Choose date</label>
+                            <input type="date" id="res-date" value={date} onChange={(e) => setDate(e.target.value)} />
+                            <label htmlFor="res-time">Choose time</label>
+                            <select id="res-time" value={time} onChange={(e) => setTime(e.target.value)} >
+                                <option>17:00</option>
+                                <option>18:00</option>
+                                <option>19:00</option>
+                                <option>20:00</option>
+                                <option>21:00</option>
+                                <option>22:00</option>
+                            </select>
+                            <label htmlFor="guests">Number of guests</label>
+                            <input type="number" placeholder="1" min="1" max="10" id="guests" value={guests} onChange={(e) => setGuests(e.target.value)} />
+                            <label htmlFor="occasion">Occasion</label>
+                            <select id="occasion" value={occasion} onChange={(e) => setOccasion(e.target.value)}>
+                                <option>Birthday</option>
+                                <option>Anniversary</option>
+                            </select>
+                            <input type="submit" value="Make Your reservation" />
                         </form>
                     </div>
                     <div className="img-wrap">
