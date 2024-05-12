@@ -7,7 +7,7 @@ function Hero() {
      <div className={"info"}>
          <h1>Little Lemon</h1>
 
-         <p>Choose your favorite meal from our broad selection of available meals and enjoy a delicious lunch or dinner at home</p>
+         <p>Choose your favorite meal from our broadhoose your favorite meal from our broad selection of available meals and enjoy a delicious lunch or dinner at home</p>
          <button className={"Hero-Action"}>Order Now</button>
      </div>
         <div className={"mainn-img"}>

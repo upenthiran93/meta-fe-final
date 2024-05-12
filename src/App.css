@@ -6,7 +6,7 @@
     "main"
     "footer";
   grid-template-rows: auto 1fr auto auto;
-  height: 100vh;
+  height: 150vh;
 }
 .App-logo {
   height: 40vmin;
