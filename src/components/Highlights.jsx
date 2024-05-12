@@ -16,6 +16,7 @@ function Highlights () {
                   description={" and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy."}
                     title={"Name of the dish"}
                     image={image}
+                  Price={"$ 20"}
               />
 
            ))}

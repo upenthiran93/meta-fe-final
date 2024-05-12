@@ -12,7 +12,7 @@
     margin-right: 2rem;
     margin-left: 2rem;
     padding: 0rem;
-    width: 400px;
+    width: 350px;
 }
 .special-card>img {
     padding: 0;
@@ -24,7 +24,23 @@
     object-fit: cover;
 }
 
-.special-card>.content {
+.special-card-content {
     grid-area: content;
     padding: 1rem;
+}
+.Name-Price-cover, .order-section {
+    display: flex;
+    justify-content: space-between;
+}
+.special-card-content> button {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #F4CE14;
+    width: 100px;
+    color: #282c34;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
 }
