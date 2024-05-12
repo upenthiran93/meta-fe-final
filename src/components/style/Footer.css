@@ -3,3 +3,7 @@ footer{
     margin: 5rem 10rem 10rem 10rem;
     height: 300px;
 }
+.Footer-soc {
+    display: flex;
+    flex-direction: column;
+}
