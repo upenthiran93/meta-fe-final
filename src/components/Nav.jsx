@@ -4,7 +4,7 @@ import './style/Nav.css';
 
 function Nav() {
     return (
-      <Router>
+
         <nav className='nav'>
           <ul>
             <li><Link to="/">Home</Link></li>
@@ -15,7 +15,7 @@ function Nav() {
             <li><Link to="/login">Login</Link></li>
           </ul>
         </nav>
-      </Router>
+
     );
 }
 
