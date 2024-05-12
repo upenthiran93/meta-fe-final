@@ -3,8 +3,7 @@ main {
     display: grid;
     grid-template-areas: "Hero" "Highlight" "Testimonial" "About";
     grid-template-rows: 35vh 55vh 25vh 25vh;
-    margin-right: 10rem;
-    margin-left: 10rem;
+
 }
 
 .hero {
@@ -22,6 +21,7 @@ main {
     width: 35%; /* Corrected the typo from 'witdh' to 'width' */
     align-self: center;
     color: #fff;
+
 }
 
 .hero-img {
@@ -32,10 +32,12 @@ main {
 }
 .hero-img img {
     position: absolute;
+    bottom: -60px;
     right: 0;
-    width: 400px;
-    height: auto;
+    width: 500px;
+    height: 500px;
     object-fit: cover;
+  border-radius: 5%;
 
 }
 
@@ -43,9 +45,8 @@ main {
 
 .Highlights {
     grid-area: Highlight;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    margin: 5rem 10rem 2rem 10rem;
+
 }
 
 .TitleBox > h1 {
@@ -55,8 +56,7 @@ main {
 .Highlights > .TitleBox {
     display: flex;
     justify-content: space-between;
-    grid-column: 2 / 12;
-    grid-row: 2 / 2;
+
     align-self: center;
 }
 
@@ -64,7 +64,6 @@ main {
     justify-content: center;
     display: flex;
     height: 100%;
-    grid-column: 2 / 12;
-    grid-row: 3 / 10;
+
     align-self: center;
 }
