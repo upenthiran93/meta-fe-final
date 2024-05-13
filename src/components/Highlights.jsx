@@ -9,7 +9,7 @@ function Highlights () {
     <div className={"Highlights"}>
         <div className={"TitleBox"}>
             <h1>Highlights</h1>
-            <button> oder noww</button>
+            <button> oder now</button>
         </div>
        < div className={"HighlightsBox"}>
            {specialData.map((item, index) => (
