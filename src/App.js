@@ -9,8 +9,16 @@ import {
     Route,
 } from "react-router-dom";
 import Reservation from "./components/Reservation";
+import React from "react";
+
+function undateTime(times,action) {
+    return times.filter((time) => {
+        return time !== action;
+    });
+}
 
 function App() {
+    const [times, setTimes] = React.useReducer (undateTime,['17:00', '18:00', '19:00', '20:00', '21:00', '22:00']);
     return (
 
         <div className='App'>
@@ -20,7 +28,7 @@ function App() {
                 <Header/>
                 <Routes>
                     <Route path="/" element={<Main/>}/>
-                    <Route path="/reservation" element={<Reservation />} />
+                    <Route path="/reservation" element={<Reservation Times={times} despatch={setTimes} />} />
 
                 </Routes>
 
