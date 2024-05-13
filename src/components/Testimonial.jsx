@@ -1,28 +1,30 @@
-import SpecialCard from "./SpecialCard";
-import image from "../assets/images/restaurant.jpg";
+// src/components/Testimonial.jsx
+
 import React from "react";
 import TestimonialCard from "./TestimonialCard";
+import testimonialData from "../API/TestimonialCardData";
 
 function Testimonial () {
-  return (
-    <div className="testimonial">
-      <div className="testimonial_Title">
-       <h1>
-           Testimonial
-       </h1>
-      </div>
-        <div className="testimonial_cards">
-
-            {[...Array(3)].map((_, index) => (
-                <TestimonialCard
-                    key={index}
-
-                />
-
-            ))}
-
+    return (
+        <div className="testimonial">
+            <div className="testimonial_Title">
+                <h1>
+                    Testimonial
+                </h1>
+            </div>
+            <div className="testimonial_cards">
+                {testimonialData.map((data, index) => (
+                    <TestimonialCard
+                        key={index}
+                        name={data.name}
+                        image={data.image}
+                        testimonial={data.testimonial}
+                        rating={data.rating}
+                        review={data.review}
+                    />
+                ))}
+            </div>
         </div>
-    </div>
-  );
+    );
 }
 export default Testimonial;
