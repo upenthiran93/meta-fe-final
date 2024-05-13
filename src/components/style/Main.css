@@ -129,3 +129,24 @@ main {
     object-fit: cover;
     border-radius: 5%;
 }
+.ConfirmedBooking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+.btnGroup {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+.btnGroup>button {
+    margin: 1rem;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
