@@ -2,12 +2,13 @@ import { Link } from 'react-router-dom';
 import Nav from "./Nav";
 import React from "react";
 import "./style/Footer.css";
+import logo from "../assets/icons/Logo.svg";
 
 function Footer() {
     return (
         <footer>
             <div className={"Footer-img"}>
-                <img  src="https://via.placeholder.com/400" alt="about"/>
+                <img  src={logo} alt="about"/>
             </div>
             <Nav/>
             <div className={"Footer-soc"}>

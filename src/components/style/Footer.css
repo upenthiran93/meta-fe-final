@@ -1,7 +1,8 @@
 footer{
     display: flex;
-    margin: 5rem 10rem 10rem 10rem;
-    height: 300px;
+    justify-content: space-between;
+    margin: 2rem 0rem 2rem 0rem;
+    height: 200px;
 }
 .Footer-soc {
     display: flex;
