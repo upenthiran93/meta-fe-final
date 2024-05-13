@@ -1,3 +1,6 @@
+import img1 from '../assets/images/Mario and Adrian b.jpg';
+import img2 from '../assets/images/restaurant.jpg';
+
 function About() {
   return (
     <div className={"About"}>
@@ -10,8 +13,8 @@ function About() {
 
         </div>
         <div className={"About_images"}>
-            <img className={"About_image AB-img1"} src="https://via.placeholder.com/400" alt="about"/>
-            <img className={"About_image AB-img1"} src="https://via.placeholder.com/400" alt="about"/>
+            <img className={"About_image AB-img1"} src={img1} alt="about"/>
+            <img className={"About_image AB-img2"} src={img2} alt="about"/>
 
         </div>
     </div>

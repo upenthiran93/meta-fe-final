@@ -33,3 +33,7 @@
     padding: 5px;
     border-radius: 5px;
 }
+.testimonial_card_content {
+    grid-area: content;
+    padding: 1rem;
+}

@@ -96,7 +96,7 @@ main {
     color: #000000;
     margin: 5rem 10rem 10rem 10rem;
     grid-area: About;
-
+    position: relative;
     display: flex; /* Change from 'inline' to 'flex' */
     justify-content: space-between; /* Add this line */
     align-items: center;
@@ -108,6 +108,21 @@ main {
 .About_img{
     width: 30%;
 }
+.About_image {
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+.AB-img1{
+    top: 60px;
+    right: 160px;
+    z-index: 1;
+}
+
 .Footer-img>img {
     width: 100%;
     height: 200px;

@@ -2,13 +2,14 @@
 import profile1 from '../assets/images/profile1.jpg';
 import profile2 from '../assets/images/profile2.jpg';
 import profile3 from '../assets/images/profile3.jpg';
+import profile4 from '../assets/images/profile2-copy-0.jpg';
 
 const testimonialData = [
     {
         name: "John Doe",
         image: profile1,
         rating: 4.5,
-        review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."
+        review: "Lorem ipsum dolor sit amet, consectetur  posuere erat a ante."
     },
     {
         name: "Jane Smith",
@@ -20,7 +21,13 @@ const testimonialData = [
         name: "Bob Johnson",
         image: profile3,
         rating: 4.7,
-        review: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+        review: "Ut enim ad minim veniam, quis nostrud exercitation  aliquip."
+    },
+    {
+        name: "Bob Johnson",
+        image: profile4,
+        rating: 4.7,
+        review: "Ut enim ad minim veniam, quis nostrud exercitation  aliquip."
     }
 ];
 
