@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './style/Reservation.css';
+import { useNavigate } from 'react-router-dom';
+import {submitAPI} from '../API/API';
 
 const Reservation = ({Times, despatch}) => {
     useEffect(() => {
@@ -9,10 +11,22 @@ const Reservation = ({Times, despatch}) => {
     const [time, setTime] = useState('');
     const [guests, setGuests] = useState(1);
     const [occasion, setOccasion] = useState('');
-
+    const navigate = useNavigate();
     const handleSubmit = (e) => {
         e.preventDefault();
-        despatch(time); // Dispatch the selected time to be removed
+        const formData = {
+            date: date,
+            time: time,
+            guests: guests,
+            occasion: occasion
+        };
+        const success = submitAPI(formData);
+        if (success) {
+            despatch(time); // Dispatch the selected time to be removed
+            navigate('/confirmed'); // Navigate to the booking confirmation page
+        } else {
+            console.error('Failed to submit reservation');
+        }
     };
 
     return (
