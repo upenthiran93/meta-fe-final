@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './style/Reservation.css';
 import { useNavigate } from 'react-router-dom';
 import { submitAPI } from '../API/API';
+import imgcover from '../assets/images/restaurant.jpg';
 
 const Reservation = ({ Times, despatch }) => {
     useEffect(() => {
@@ -52,34 +53,44 @@ const Reservation = ({ Times, despatch }) => {
                     <header>
                         <h2>Reservations</h2>
                     </header>
-                    <form onSubmit={handleSubmit} style={{ display: "grid", maxWidth: "200px", gap: "20px" }}>
-                        <label htmlFor="res-date">Choose date</label>
-                        <input type="date" id="res-date" value={date} onChange={(e) => setDate(e.target.value)} required />
-                        {formErrors.date && <p>Please select a date</p>}
-
-                        <label htmlFor="res-time">Choose time</label>
-                        <select id="res-time" value={time} onChange={(e) => setTime(e.target.value)} required>
-                            <option value="">Select Time</option>
-                            {Times.map((time) => {
-                                return <option key={time} value={time}>{time}</option>
-                            })}
-                        </select>
-                        {formErrors.time && <p>Please select a time</p>}
-
-                        <label htmlFor="guests">Number of guests</label>
-                        <input type="number" placeholder="1" min="1" max="10" id="guests" value={guests} onChange={(e) => setGuests(e.target.value)} required />
-                        {formErrors.guests && <p>Please enter the number of guests</p>}
-
-                        <label htmlFor="occasion">Occasion</label>
-                        <select id="occasion" value={occasion} onChange={(e) => setOccasion(e.target.value)} required>
-                            <option value="">Select Occasion</option>
-                            <option>Birthday</option>
-                            <option>Anniversary</option>
-                        </select>
-                        {formErrors.occasion && <p>Please select an occasion</p>}
-
-                        <input type="submit" value="Make Your reservation" aria-label="On Click" />
+                    <form onSubmit={handleSubmit} style={{display: "grid", maxWidth: "200px", gap: "20px"}}>
+                        <div className={"Field"}>
+                            <label htmlFor="res-date">Choose date</label>
+                            <input type="date" id="res-date" value={date} onChange={(e) => setDate(e.target.value)}
+                                   required/>
+                            {formErrors.date && <p>Please select a date</p>}
+                        </div>
+                        <div className={"Field"}>
+                            <label htmlFor="res-time">Choose time</label>
+                            <select id="res-time" value={time} onChange={(e) => setTime(e.target.value)} required>
+                                <option value="">Select Time</option>
+                                {Times.map((time) => {
+                                    return <option key={time} value={time}>{time}</option>
+                                })}
+                            </select>
+                            {formErrors.time && <p>Please select a time</p>}
+                        </div>
+                            <div className={"Field"}>
+                            <label htmlFor="guests">Number of guests</label>
+                            <input type="number" placeholder="1" min="1" max="10" id="guests" value={guests}
+                                   onChange={(e) => setGuests(e.target.value)} required/>
+                            {formErrors.guests && <p>Please enter the number of guests</p>}
+                        </div>
+                        <div className={"Field"}>
+                            <label htmlFor="occasion">Occasion</label>
+                            <select id="occasion" value={occasion} onChange={(e) => setOccasion(e.target.value)}
+                                    required>
+                                <option value="">Select Occasion</option>
+                                <option>Birthday</option>
+                                <option>Anniversary</option>
+                            </select>
+                            {formErrors.occasion && <p>Please select an occasion</p>}
+                        </div>
+                            <input type="submit" value="Make Your reservation" aria-label="On Click"/>
                     </form>
+                </article>
+                <article className="reservation-img">
+                    <img src={imgcover} alt="Reservation"/>
                 </article>
             </div>
         </section>
