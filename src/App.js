@@ -8,6 +8,7 @@ import {BrowserRouter as Router, Routes, Route,} from "react-router-dom";
 import Reservation from "./components/Reservation";
 import React from "react";
 import ConfirmedBooking from "./components/ConfirmedBooking";
+import NotDesigned from "./components/NotDesigned";
 
 function undateTime(times,action) {
     return times.filter((time) => {
@@ -34,6 +35,7 @@ function App() {
                     <Route path="/" element={<Main/>}/>
                     <Route path="/reservation" element={<Reservation Times={times} despatch={setTimes} />} />
                     <Route path="/confirmed" element={<ConfirmedBooking />} />
+                    <Route path="*" element={<NotDesigned/>} />
 
                 </Routes>
 

@@ -150,3 +150,16 @@ main {
     border-radius: 5px;
     cursor: pointer;
 }
+.NotDesigned{
+    align-items: center;
+    margin: auto;
+    display: flex;
+      flex-direction: column;
+
+}
+.NotDesigned>img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 5%;
+}
