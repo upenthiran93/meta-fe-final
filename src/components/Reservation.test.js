@@ -11,7 +11,7 @@ test('Renders the Reservation heading', () => {
 test('handleSubmit function removes the selected time', () => {
     const times = ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00'];
     const mockDispatch = jest.fn();
-
+//Terst
     render(<Reservation Times={times} despatch={mockDispatch} />);
 
     // Simulate user input
